@@ -34,7 +34,7 @@ jobs:
       - name: Test Dir
         run: ls
 
-      -name: Build Web
+      - name: Build Web
         run: cd ./web; npm i
 
 #      # 为node_modules设置缓存
