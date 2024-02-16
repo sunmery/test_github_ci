@@ -44,6 +44,7 @@ jobs:
       # 打包
       - name: Build
         run: |
+          ls -A
           cd ./web
           npm i
           ls
