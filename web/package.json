@@ -15,7 +15,7 @@
     "@mui/icons-material": "^5.15.10",
     "@mui/material": "^5.15.10",
     "@tauri-apps/api": "^1.5.2",
-    "Menu": "link:@mui/icons-material/Menu",
+    "Menu": "@mui/icons-material/Menu",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.4",
     "react": "^18.2.0",

@@ -21,7 +21,7 @@ dependencies:
     specifier: ^1.5.2
     version: 1.5.3
   Menu:
-    specifier: link:@mui/icons-material/Menu
+    specifier: '@mui/icons-material/Menu'
     version: link:@mui/icons-material/Menu
   localforage:
     specifier: ^1.10.0
