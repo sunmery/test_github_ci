@@ -31,11 +31,8 @@ jobs:
         #if: steps.cache-dependencies.outputs.cache-hit != 'true'
         #run: npm install
       # 打包
-      - name: Test Dir
-        run: ls
-
       - name: Build Web
-        run: cd ./web; npm i pnpm; pnpm i; pnpm build
+        run: cd ./web; npm i -g pnpm; pnpm i; pnpm build
 
       # 为node_modules设置缓存
       - name: Cache
