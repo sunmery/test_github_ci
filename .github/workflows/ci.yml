@@ -6,17 +6,19 @@ on:
   push:
     #    tags:
     #      - 'v*'
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
-  build-and-push:
+  deploy:
     # 将作业配置为在最新版本的Ubuntu Linux运行程序上运行,
     # 注意此处不是Docker Hub中的ubuntu:latest, 而是Github中自己的虚拟主机。
     runs-on: ubuntu-latest
+
     steps:
-      # 使用 actions 脚本，例如，用于在工作流程中检出代码仓库的操作，即它允许你从存储库中检出（拉取）代码
       - name: Checkout code
         uses: actions/checkout@v3
 
